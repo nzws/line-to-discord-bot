@@ -1,0 +1,14 @@
+{
+    "name": "nzws/line-to-discord-bot",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nzws",
+            "email": "git@nzws.me"
+        }
+    ],
+    "require": {
+        "linecorp/line-bot-sdk": "^3.7"
+    }
+}
