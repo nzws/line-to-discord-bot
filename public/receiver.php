@@ -16,8 +16,7 @@ foreach ($events as $event) {
   if (!($event instanceof MessageEvent) || !($event instanceof TextMessage) || !$event->isGroupEvent()) {
       continue;
   }
-
-  $profile = $bot->getProfile($event->getUserId());
+  $profile = $bot->getGroupMemberProfile($event->getGroupId(), $event->getUserId());
   $profile = $profile->getJSONDecodedBody();
   $text = $event->getText();
 
